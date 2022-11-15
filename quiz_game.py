@@ -71,3 +71,8 @@ def main():
     print("Bye bye")
 
 main()
+
+
+def add_question():
+    questions.setdefault(input("Enter the question: "), input("Enter correct option (A, B, C, or D): ").upper())
+    options.append([(chr(65 + i) + ". " + input("Enter options for your question: ")) for i in range(4)])
